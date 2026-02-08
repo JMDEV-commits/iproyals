@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="iProyals Pricing - Transparent pricing for all proxy and VPN services">
+    <title>Pricing - iProyals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="../index.html" class="logo-container">
+                <!-- Replace with your logo: <img src="../images/logo.png" alt="iProyals Logo" class="logo-image"> -->
+                <span class="logo">iProyals</span>
+            </a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span>☰</span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="use-cases.html">Use Cases</a></li>
+                <li><a href="documentation.html">Documentation</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="pricing.html" class="cta-button">Get Started</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Pricing Section -->
+    <section class="pricing" style="padding-top: 150px;">
+        <h2 class="section-title">Transparent Pricing</h2>
+        <p class="section-subtitle">Choose the perfect plan for your needs</p>
+        
+        <div class="pricing-tabs">
+            <button class="tab-button active" onclick="showPricing('ipv4')">IPv4 Services</button>
+            <button class="tab-button" onclick="showPricing('ipv6')">IPv6 Services</button>
+            <button class="tab-button" onclick="showPricing('rotating')">Rotating Proxies</button>
+        </div>
+
+        <!-- IPv4 Pricing -->
+        <div class="pricing-grid active" id="ipv4-pricing">
+            <div class="pricing-card">
+                <h3>Proxy (IPv4)</h3>
+                <div class="price">$2.40</div>
+                <a href="contact.html" class="btn-primary">Get Started</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Shared Proxy (IPv4)</h3>
+                <div class="price">$1.20</div>
+                <a href="contact.html" class="btn-primary">Get Started</a>
+            </div>
+            <div class="pricing-card">
+                <h3>SOCKS5</h3>
+                <div class="price">$2.08</div>
+                <a href="contact.html" class="btn-primary">Get Started</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Shared SOCKS5</h3>
+                <div class="price">$1.20</div>
+                <a href="contact.html" class="btn-primary">Get Started</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Shadowsocks</h3>
+                <div class="price">$2.80</div>
+                <a href="contact.html" class="btn-primary">Get Started</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Trojan</h3>
+                <div class="price">$2.80</div>
+                <a href="contact.html" class="btn-primary">Get Started</a>
+            </div>
+            <div class="pricing-card">
+                <h3>VPN Wireguard</h3>
+                <div class="price">$4.20</div>
+                <a href="contact.html" class="btn-primary">Get Started</a>
+            </div>
+            <div class="pricing-card">
+                <h3>DNS Proxy</h3>
+                <div class="price">$2.80</div>
+                <a href="contact.html" class="btn-primary">Get Started</a>
+            </div>
+        </div>
+
+        <!-- IPv6 Pricing -->
+        <div class="pricing-grid" id="ipv6-pricing">
+            <div class="pricing-card">
+                <h3>Proxy IPv6</h3>
+                <div class="price">$1.82</div>
+                <a href="contact.html" class="btn-primary">Get Started</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Shared Proxy IPv6</h3>
+                <div class="price">$0.96</div>
+                <a href="contact.html" class="btn-primary">Get Started</a>
+            </div>
+            <div class="pricing-card">
+                <h3>SOCKS5 IPv6</h3>
+                <div class="price">$1.82</div>
+                <a href="contact.html" class="btn-primary">Get Started</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Shared SOCKS5 IPv6</h3>
+                <div class="price">$0.96</div>
+                <a href="contact.html" class="btn-primary">Get Started</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Shadowsocks V6</h3>
+                <div class="price">$2.24</div>
+                <a href="contact.html" class="btn-primary">Get Started</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Trojan V6</h3>
+                <div class="price">$2.24</div>
+                <a href="contact.html" class="btn-primary">Get Started</a>
+            </div>
+            <div class="pricing-card">
+                <h3>VPN Wireguard V6</h3>
+                <div class="price">$2.24</div>
+                <a href="contact.html" class="btn-primary">Get Started</a>
+            </div>
+            <div class="pricing-card">
+                <h3>DNS Proxy V6</h3>
+                <div class="price">$2.80</div>
+                <a href="contact.html" class="btn-primary">Get Started</a>
+            </div>
+        </div>
+
+        <!-- Rotating Proxies Pricing -->
+        <div class="pricing-grid" id="rotating-pricing">
+            <div class="pricing-card">
+                <h3>Rotating Residential Proxy</h3>
+                <div class="price">$7.60<span style="font-size: 1rem; color: var(--text-gray);">/GB</span></div>
+                <a href="contact.html" class="btn-primary">Get Started</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Rotating Mobile Proxy</h3>
+                <div class="price">$16.00<span style="font-size: 1rem; color: var(--text-gray);">/GB</span></div>
+                <a href="contact.html" class="btn-primary">Get Started</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Rotating Datacenter Proxy</h3>
+                <div class="price">$1.40<span style="font-size: 1rem; color: var(--text-gray);">/GB</span></div>
+                <a href="contact.html" class="btn-primary">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="content-section">
+        <h2>What's Included</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">✓</div>
+                <h3>No Setup Fees</h3>
+                <p>Get started immediately with no hidden costs or setup charges.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">✓</div>
+                <h3>24/7 Support</h3>
+                <p>Our team is always ready to help you with any questions.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">✓</div>
+                <h3>99.9% Uptime</h3>
+                <p>Industry-leading uptime guarantee for uninterrupted service.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">✓</div>
+                <h3>Easy Integration</h3>
+                <p>Simple API and comprehensive documentation for quick setup.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <h2>Have Questions?</h2>
+        <p>Our team is here to help you choose the right plan</p>
+        <a href="contact.html" class="btn-primary">Contact Us</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>iProyals</h4>
+                <p style="color: var(--text-gray);">Premium proxy and VPN services for businesses worldwide.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Products</h4>
+                <ul>
+                    <li><a href="products.html#residential">Residential Proxies</a></li>
+                    <li><a href="products.html#datacenter">Datacenter Proxies</a></li>
+                    <li><a href="products.html#mobile">Mobile Proxies</a></li>
+                    <li><a href="products.html#vpn">VPN Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="documentation.html">Documentation</a></li>
+                    <li><a href="documentation.html#api">API Reference</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="contact.html">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 iProyals. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

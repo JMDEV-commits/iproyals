@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="iProyals Documentation - API reference and integration guides">
+    <title>Documentation - iProyals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="../index.html" class="logo-container">
+                <!-- Replace with your logo: <img src="../images/logo.png" alt="iProyals Logo" class="logo-image"> -->
+                <span class="logo">iProyals</span>
+            </a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span>☰</span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="use-cases.html">Use Cases</a></li>
+                <li><a href="documentation.html">Documentation</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="pricing.html" class="cta-button">Get Started</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Documentation</h1>
+        <p>Everything you need to integrate iProyals into your workflow</p>
+    </section>
+
+    <!-- Getting Started -->
+    <section class="content-section">
+        <h2>Getting Started</h2>
+        <p>Welcome to iProyals! This guide will help you get up and running with our proxy services in minutes.</p>
+        
+        <h3>1. Create Your Account</h3>
+        <p>Sign up for an iProyals account and choose the proxy type that best fits your needs. You'll receive instant access to our dashboard.</p>
+        
+        <h3>2. Get Your Credentials</h3>
+        <p>Navigate to your dashboard to find your authentication credentials. You'll need these to connect to our proxy network.</p>
+        
+        <h3>3. Configure Your Connection</h3>
+        <p>Use the connection details provided in your dashboard to configure your application or browser.</p>
+    </section>
+
+    <!-- Connection Methods -->
+    <section class="content-section">
+        <h2>Connection Methods</h2>
+        
+        <h3>HTTP/HTTPS Proxies</h3>
+        <p>Standard proxy format for web browsers and HTTP clients:</p>
+        <pre style="background: var(--card-bg); padding: 1.5rem; border-radius: 10px; overflow-x: auto; color: var(--text-light);">
+Proxy Host: proxy.iproyals.com
+Proxy Port: 8080
+Username: your_username
+Password: your_password
+        </pre>
+        
+        <h3>SOCKS5 Proxies</h3>
+        <p>For applications requiring SOCKS5 protocol support:</p>
+        <pre style="background: var(--card-bg); padding: 1.5rem; border-radius: 10px; overflow-x: auto; color: var(--text-light);">
+Proxy Host: socks.iproyals.com
+Proxy Port: 1080
+Username: your_username
+Password: your_password
+        </pre>
+    </section>
+
+    <!-- API Reference -->
+    <section class="content-section" id="api">
+        <h2>API Reference</h2>
+        
+        <h3>Authentication</h3>
+        <p>All API requests require authentication using your API key. Include your API key in the request header:</p>
+        <pre style="background: var(--card-bg); padding: 1.5rem; border-radius: 10px; overflow-x: auto; color: var(--text-light);">
+Authorization: Bearer YOUR_API_KEY
+        </pre>
+        
+        <h3>Get Account Info</h3>
+        <p>Retrieve your account information and usage statistics.</p>
+        <pre style="background: var(--card-bg); padding: 1.5rem; border-radius: 10px; overflow-x: auto; color: var(--text-light);">
+GET https://api.iproyals.com/v1/account
+
+Response:
+{
+  "username": "your_username",
+  "balance": 100.00,
+  "proxy_count": 10,
+  "bandwidth_used": "50GB",
+  "bandwidth_limit": "100GB"
+}
+        </pre>
+        
+        <h3>List Active Proxies</h3>
+        <p>Get a list of all your active proxy connections.</p>
+        <pre style="background: var(--card-bg); padding: 1.5rem; border-radius: 10px; overflow-x: auto; color: var(--text-light);">
+GET https://api.iproyals.com/v1/proxies
+
+Response:
+{
+  "proxies": [
+    {
+      "id": "proxy_123",
+      "type": "residential",
+      "ip": "192.168.1.1",
+      "port": 8080,
+      "country": "US",
+      "status": "active"
+    }
+  ]
+}
+        </pre>
+        
+        <h3>Generate Proxy List</h3>
+        <p>Generate a custom list of proxy endpoints.</p>
+        <pre style="background: var(--card-bg); padding: 1.5rem; border-radius: 10px; overflow-x: auto; color: var(--text-light);">
+POST https://api.iproyals.com/v1/proxies/generate
+
+Request Body:
+{
+  "type": "residential",
+  "country": "US",
+  "count": 10,
+  "protocol": "http"
+}
+
+Response:
+{
+  "proxies": [
+    "192.168.1.1:8080:username:password",
+    "192.168.1.2:8080:username:password"
+  ]
+}
+        </pre>
+    </section>
+
+    <!-- Code Examples -->
+    <section class="content-section">
+        <h2>Code Examples</h2>
+        
+        <h3>Python Example</h3>
+        <pre style="background: var(--card-bg); padding: 1.5rem; border-radius: 10px; overflow-x: auto; color: var(--text-light);">
+import requests
+
+proxies = {
+    'http': 'http://username:password@proxy.iproyals.com:8080',
+    'https': 'http://username:password@proxy.iproyals.com:8080'
+}
+
+response = requests.get('https://api.ipify.org', proxies=proxies)
+print(f'Your IP: {response.text}')
+        </pre>
+        
+        <h3>Node.js Example</h3>
+        <pre style="background: var(--card-bg); padding: 1.5rem; border-radius: 10px; overflow-x: auto; color: var(--text-light);">
+const axios = require('axios');
+
+const proxy = {
+  host: 'proxy.iproyals.com',
+  port: 8080,
+  auth: {
+    username: 'your_username',
+    password: 'your_password'
+  }
+};
+
+axios.get('https://api.ipify.org', { proxy })
+  .then(response => console.log('Your IP:', response.data))
+  .catch(error => console.error('Error:', error));
+        </pre>
+        
+        <h3>cURL Example</h3>
+        <pre style="background: var(--card-bg); padding: 1.5rem; border-radius: 10px; overflow-x: auto; color: var(--text-light);">
+curl -x proxy.iproyals.com:8080 \
+     -U username:password \
+     https://api.ipify.org
+        </pre>
+    </section>
+
+    <!-- Best Practices -->
+    <section class="content-section">
+        <h2>Best Practices</h2>
+        
+        <h3>Connection Pool Management</h3>
+        <p>Reuse connections when possible to improve performance and reduce overhead. Maintain a pool of active connections for high-volume operations.</p>
+        
+        <h3>Error Handling</h3>
+        <p>Implement proper retry logic for failed requests. Use exponential backoff to avoid overwhelming the proxy network during outages.</p>
+        
+        <h3>Rate Limiting</h3>
+        <p>Respect rate limits to ensure optimal performance. Distribute requests across multiple proxies when performing high-volume operations.</p>
+        
+        <h3>Session Management</h3>
+        <p>Use sticky sessions when you need to maintain the same IP address across multiple requests. This is crucial for activities like account management.</p>
+    </section>
+
+    <!-- Troubleshooting -->
+    <section class="content-section">
+        <h2>Troubleshooting</h2>
+        
+        <h3>Authentication Errors</h3>
+        <p>Verify that your username and password are correct. Ensure there are no extra spaces or special characters that might be causing issues.</p>
+        
+        <h3>Connection Timeouts</h3>
+        <p>Check your network connectivity and firewall settings. Ensure that your application is configured to use the correct proxy host and port.</p>
+        
+        <h3>Slow Performance</h3>
+        <p>Try using datacenter proxies instead of residential for speed-critical tasks. Check your bandwidth usage and upgrade your plan if necessary.</p>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <h2>Need Help?</h2>
+        <p>Our support team is here to assist you with any questions</p>
+        <a href="contact.html" class="btn-primary">Contact Support</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>iProyals</h4>
+                <p style="color: var(--text-gray);">Premium proxy and VPN services for businesses worldwide.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Products</h4>
+                <ul>
+                    <li><a href="products.html#residential">Residential Proxies</a></li>
+                    <li><a href="products.html#datacenter">Datacenter Proxies</a></li>
+                    <li><a href="products.html#mobile">Mobile Proxies</a></li>
+                    <li><a href="products.html#vpn">VPN Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="documentation.html">Documentation</a></li>
+                    <li><a href="documentation.html#api">API Reference</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="contact.html">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 iProyals. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -3,106 +3,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="iProyals Products - Residential, datacenter, mobile proxies and VPN services">
+    <meta name="description" content="iProyals Products - Residential, datacenter, mobile proxies and VPN services for every need.">
     <title>Products - iProyals</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Navigation -->
     <nav>
         <div class="nav-container">
-            <a href="../index.html" class="logo-container">
-                <span class="logo">iProyals</span>
+            <a href="index.html" class="logo-container">
+                <img src="logo.svg" alt="iProyals Logo" class="logo-image">
             </a>
             <button class="mobile-menu-toggle" aria-label="Toggle menu">
                 <span>☰</span>
             </button>
             <ul class="nav-menu">
-                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="pricing.html">Pricing</a></li>
                 <li><a href="use-cases.html">Use Cases</a></li>
-                <li><a href="documentation.html">Documentation</a></li>
+                <li><a href="documentation.html">Docs</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="pricing.html" class="cta-button">Get Started</a></li>
+                <li><a href="https://myaccount.iproyals.shop/" class="nav-login" target="_blank" rel="noopener">Login</a></li>
+                <li><a href="https://myaccount.iproyals.shop/" class="cta-button" target="_blank" rel="noopener">Sign Up</a></li>
             </ul>
         </div>
     </nav>
 
-    <section class="hero">
+    <!-- Page Hero -->
+    <div class="page-hero">
         <h1>Our Products</h1>
-        <p>Comprehensive proxy and VPN solutions for every need</p>
+        <p>Comprehensive proxy and VPN solutions built for every professional use case</p>
+    </div>
+
+    <!-- Residential Proxies -->
+    <section class="product-section" id="residential">
+        <div class="product-header">
+            <div class="feature-icon" style="width:70px;height:70px;font-size:2.2rem;">🏠</div>
+            <div>
+                <h2>Residential Proxies</h2>
+                <p>Real IP addresses from actual devices in 195+ countries</p>
+            </div>
+        </div>
+        <div class="product-body">
+            <div class="product-desc">
+                <p>Access millions of real residential IP addresses from locations worldwide. Perfect for web scraping, ad verification, and accessing geo-restricted content with the highest success rates in the industry.</p>
+                <p>Our residential proxy network is built on real devices, meaning your requests appear completely legitimate to target websites. This gives you the highest success rate possible for any data-gathering or geo-targeting task.</p>
+                <ul class="product-features-list">
+                    <li>✓ 10M+ residential IP addresses across 195+ countries</li>
+                    <li>✓ Rotating and sticky session support</li>
+                    <li>✓ HTTP(S) and SOCKS5 protocols</li>
+                    <li>✓ City and ISP-level targeting</li>
+                    <li>✓ 99.9% uptime guarantee</li>
+                    <li>✓ Unlimited concurrent connections</li>
+                </ul>
+                <a href="https://myaccount.iproyals.shop/" class="btn-primary" target="_blank" rel="noopener">Get Started →</a>
+            </div>
+            <div class="product-stats">
+                <div class="product-stat"><span>10M+</span><p>IPs Available</p></div>
+                <div class="product-stat"><span>195+</span><p>Countries</p></div>
+                <div class="product-stat"><span>99.9%</span><p>Success Rate</p></div>
+                <div class="product-stat"><span>From $7.60</span><p>Per GB</p></div>
+            </div>
+        </div>
     </section>
 
-    <section class="content-section" id="residential">
-        <h2>Residential Proxies</h2>
-        <p>Access millions of real residential IP addresses from locations worldwide. Perfect for web scraping, ad verification, and accessing geo-restricted content.</p>
-        <h3>Key Features</h3>
-        <ul>
-            <li>10M+ residential IP addresses</li>
-            <li>195+ countries and all major cities</li>
-            <li>Rotating and sticky session options</li>
-            <li>HTTP(S) and SOCKS5 protocols</li>
-            <li>99.9% uptime guarantee</li>
-            <li>Unlimited concurrent connections</li>
-        </ul>
-        <a href="pricing.html" class="btn-primary">View Pricing</a>
+    <!-- Datacenter Proxies -->
+    <section class="product-section" id="datacenter">
+        <div class="product-header">
+            <div class="feature-icon" style="width:70px;height:70px;font-size:2.2rem;">🖥️</div>
+            <div>
+                <h2>Datacenter Proxies</h2>
+                <p>High-speed IPv4 and IPv6 proxies at unbeatable prices</p>
+            </div>
+        </div>
+        <div class="product-body">
+            <div class="product-desc">
+                <p>Our datacenter proxies offer exceptional performance at affordable prices. Choose from dedicated or shared options with both IPv4 and IPv6 support, perfect for high-volume tasks that need raw speed.</p>
+                <p>With sub-millisecond response times and 100% network uptime, datacenter proxies are ideal for bulk data gathering, automation, and any task where speed trumps IP reputation.</p>
+                <ul class="product-features-list">
+                    <li>✓ Lightning-fast connection speeds (&lt;10ms latency)</li>
+                    <li>✓ Dedicated and shared options</li>
+                    <li>✓ Multiple subnet diversity</li>
+                    <li>✓ IPv4 and IPv6 support</li>
+                    <li>✓ Instant activation</li>
+                    <li>✓ HTTP, HTTPS, SOCKS5 protocols</li>
+                </ul>
+                <a href="https://myaccount.iproyals.shop/" class="btn-primary" target="_blank" rel="noopener">Get Started →</a>
+            </div>
+            <div class="product-stats">
+                <div class="product-stat"><span>&lt;10ms</span><p>Latency</p></div>
+                <div class="product-stat"><span>100%</span><p>Network Uptime</p></div>
+                <div class="product-stat"><span>IPv4+6</span><p>Protocol Support</p></div>
+                <div class="product-stat"><span>From $1.20</span><p>Per Proxy/mo</p></div>
+            </div>
+        </div>
     </section>
 
-    <section class="content-section" id="datacenter">
-        <h2>Datacenter Proxies</h2>
-        <p>High-speed datacenter proxies offering exceptional performance at affordable prices.</p>
-        <h3>Key Features</h3>
-        <ul>
-            <li>Lightning-fast connection speeds</li>
-            <li>100% dedicated and shared options</li>
-            <li>Multiple subnet diversity</li>
-            <li>IPv4 and IPv6 support</li>
-            <li>Instant activation</li>
-        </ul>
-        <a href="pricing.html" class="btn-primary">View Pricing</a>
+    <!-- Mobile Proxies -->
+    <section class="product-section" id="mobile">
+        <div class="product-header">
+            <div class="feature-icon" style="width:70px;height:70px;font-size:2.2rem;">📱</div>
+            <div>
+                <h2>Mobile Proxies</h2>
+                <p>Real 4G/5G mobile IPs with the highest trust score</p>
+            </div>
+        </div>
+        <div class="product-body">
+            <div class="product-desc">
+                <p>Harness the power of real 4G and 5G mobile IP addresses. Mobile proxies carry the highest trust score of any proxy type — making them ideal for social media management, app testing, and tasks where you absolutely cannot get flagged.</p>
+                <p>Our carrier-grade NAT rotation gives you millions of mobile IPs across multiple carriers and countries, rotating automatically with each request.</p>
+                <ul class="product-features-list">
+                    <li>✓ Real 4G/5G mobile IP addresses</li>
+                    <li>✓ Carrier-grade NAT rotation</li>
+                    <li>✓ Multiple carriers available</li>
+                    <li>✓ Geo-targeting by country and city</li>
+                    <li>✓ Highest trust score of any proxy type</li>
+                    <li>✓ Perfect for social media &amp; app testing</li>
+                </ul>
+                <a href="https://myaccount.iproyals.shop/" class="btn-primary" target="_blank" rel="noopener">Get Started →</a>
+            </div>
+            <div class="product-stats">
+                <div class="product-stat"><span>4G/5G</span><p>Network Type</p></div>
+                <div class="product-stat"><span>Highest</span><p>Trust Score</p></div>
+                <div class="product-stat"><span>Multiple</span><p>Carriers</p></div>
+                <div class="product-stat"><span>$16.00</span><p>Per GB</p></div>
+            </div>
+        </div>
     </section>
 
-    <section class="content-section" id="mobile">
-        <h2>Mobile Proxies</h2>
-        <p>Real mobile IP addresses from 4G/5G networks.</p>
-        <h3>Key Features</h3>
-        <ul>
-            <li>Real 4G/5G mobile IPs</li>
-            <li>Carrier-grade NAT rotation</li>
-            <li>Multiple carriers available</li>
-            <li>Geo-targeting by country/city</li>
-        </ul>
-        <a href="pricing.html" class="btn-primary">View Pricing</a>
+    <!-- Rotating Proxies -->
+    <section class="product-section" id="rotating">
+        <div class="product-header">
+            <div class="feature-icon" style="width:70px;height:70px;font-size:2.2rem;">🔄</div>
+            <div>
+                <h2>Rotating Proxies</h2>
+                <p>Automatically rotate IPs to stay undetected at all times</p>
+            </div>
+        </div>
+        <div class="product-body">
+            <div class="product-desc">
+                <p>Our rotating proxy service intelligently cycles through millions of IPs, giving you a fresh IP address with every request or on a customizable timer. Never get blocked again.</p>
+                <p>Available across residential, mobile, and datacenter IP pools — choose the right balance of anonymity, trust score, and price for your specific use case.</p>
+                <ul class="product-features-list">
+                    <li>✓ Rotate IP every request or on a schedule</li>
+                    <li>✓ Residential, mobile, and datacenter pools</li>
+                    <li>✓ 195+ country targeting</li>
+                    <li>✓ Sticky sessions available</li>
+                    <li>✓ No IP bans or CAPTCHAs</li>
+                    <li>✓ Pay-as-you-go by bandwidth</li>
+                </ul>
+                <a href="https://myaccount.iproyals.shop/" class="btn-primary" target="_blank" rel="noopener">Get Started →</a>
+            </div>
+            <div class="product-stats">
+                <div class="product-stat"><span>Auto</span><p>IP Rotation</p></div>
+                <div class="product-stat"><span>3 Pools</span><p>IP Types</p></div>
+                <div class="product-stat"><span>195+</span><p>Countries</p></div>
+                <div class="product-stat"><span>From $1.40</span><p>Per GB</p></div>
+            </div>
+        </div>
     </section>
 
-    <section class="content-section" id="vpn">
-        <h2>VPN Services</h2>
-        <p>Enterprise-grade VPN solutions with WireGuard protocol.</p>
-        <h3>Key Features</h3>
-        <ul>
-            <li>WireGuard protocol</li>
-            <li>Military-grade encryption</li>
-            <li>No-logs policy</li>
-            <li>Kill switch protection</li>
-        </ul>
-        <a href="pricing.html" class="btn-primary">View Pricing</a>
+    <!-- VPN Services -->
+    <section class="product-section" id="vpn">
+        <div class="product-header">
+            <div class="feature-icon" style="width:70px;height:70px;font-size:2.2rem;">🛡️</div>
+            <div>
+                <h2>VPN &amp; Advanced Protocols</h2>
+                <p>Encrypted tunnels with WireGuard, SOCKS5, Shadowsocks &amp; Trojan</p>
+            </div>
+        </div>
+        <div class="product-body">
+            <div class="product-desc">
+                <p>Enterprise-grade VPN and advanced proxy protocol services. Whether you need a simple WireGuard VPN tunnel, SOCKS5 for application-level routing, or stealth protocols like Shadowsocks and Trojan to bypass deep packet inspection — we've got you covered.</p>
+                <ul class="product-features-list">
+                    <li>✓ WireGuard VPN — fastest modern protocol</li>
+                    <li>✓ SOCKS5 — versatile all-traffic proxy</li>
+                    <li>✓ Shadowsocks — obfuscated encrypted proxy</li>
+                    <li>✓ Trojan — undetectable TLS-based proxy</li>
+                    <li>✓ DNS Proxy — bypass DNS restrictions</li>
+                    <li>✓ Strict no-logs policy on all services</li>
+                </ul>
+                <a href="https://myaccount.iproyals.shop/" class="btn-primary" target="_blank" rel="noopener">Get Started →</a>
+            </div>
+            <div class="product-stats">
+                <div class="product-stat"><span>5</span><p>Protocols</p></div>
+                <div class="product-stat"><span>AES-256</span><p>Encryption</p></div>
+                <div class="product-stat"><span>Zero</span><p>Logs Policy</p></div>
+                <div class="product-stat"><span>From $2.08</span><p>Per Month</p></div>
+            </div>
+        </div>
     </section>
 
+    <!-- CTA Section -->
     <section class="cta-section">
         <h2>Ready to Choose Your Solution?</h2>
-        <p>Explore our pricing plans and find the perfect fit</p>
-        <a href="pricing.html" class="btn-primary">View All Pricing</a>
+        <p>Sign up today and start with the proxy type that fits your needs best.</p>
+        <div class="hero-buttons">
+            <a href="https://myaccount.iproyals.shop/" class="btn-primary" target="_blank" rel="noopener">Get Started Free</a>
+            <a href="pricing.html" class="btn-secondary">View All Pricing</a>
+        </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <div class="footer-section">
-                <h4>iProyals</h4>
-                <p style="color: var(--text-gray);">Premium proxy and VPN services for businesses worldwide.</p>
+            <div class="footer-section footer-brand">
+                <a href="index.html" class="logo-container">
+                    <img src="logo.svg" alt="iProyals" class="footer-logo">
+                </a>
+                <p>Premium proxy and VPN services for businesses worldwide. Fast, secure, and reliable infrastructure you can count on.</p>
             </div>
             <div class="footer-section">
                 <h4>Products</h4>
@@ -110,6 +226,7 @@
                     <li><a href="products.html#residential">Residential Proxies</a></li>
                     <li><a href="products.html#datacenter">Datacenter Proxies</a></li>
                     <li><a href="products.html#mobile">Mobile Proxies</a></li>
+                    <li><a href="products.html#rotating">Rotating Proxies</a></li>
                     <li><a href="products.html#vpn">VPN Services</a></li>
                 </ul>
             </div>
@@ -118,7 +235,8 @@
                 <ul>
                     <li><a href="documentation.html">Documentation</a></li>
                     <li><a href="documentation.html#api">API Reference</a></li>
-                    <li><a href="contact.html">Support</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="use-cases.html">Use Cases</a></li>
                 </ul>
             </div>
             <div class="footer-section">
@@ -126,14 +244,23 @@
                 <ul>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Account</h4>
+                <ul>
+                    <li><a href="https://myaccount.iproyals.shop/" target="_blank" rel="noopener">Login</a></li>
+                    <li><a href="https://myaccount.iproyals.shop/" target="_blank" rel="noopener">Sign Up</a></li>
+                    <li><a href="https://myaccount.iproyals.shop/" target="_blank" rel="noopener">Dashboard</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 iProyals. All rights reserved.</p>
+            <p>&copy; 2025 iProyals. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
         </div>
     </footer>
 
-    <script src="../js/main.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

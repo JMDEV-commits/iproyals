@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" fill="none">
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6C5CE7"/>
+      <stop offset="100%" style="stop-color:#00D9FF"/>
+    </linearGradient>
+  </defs>
+  <!-- Crown/Shield icon -->
+  <g transform="translate(0, 5)">
+    <!-- Shield shape -->
+    <path d="M18 2 L30 6 L30 18 Q30 28 18 34 Q6 28 6 18 L6 6 Z" fill="url(#logoGrad)" opacity="0.9"/>
+    <!-- Crown points -->
+    <path d="M10 14 L10 10 L14 13 L18 8 L22 13 L26 10 L26 14 L10 14Z" fill="white" opacity="0.95"/>
+    <!-- Crown base -->
+    <rect x="10" y="14" width="16" height="3" rx="1" fill="white" opacity="0.8"/>
+  </g>
+  <!-- Text -->
+  <text x="40" y="33" font-family="Sora, sans-serif" font-weight="800" font-size="22" fill="url(#logoGrad)" letter-spacing="-0.5">iProyals</text>
+</svg>

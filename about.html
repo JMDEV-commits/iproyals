@@ -3,87 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="About iProyals - Learn about our mission and values">
+    <meta name="description" content="About iProyals - Learn about our mission, values, and the team behind premium proxy services.">
     <title>About Us - iProyals</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Navigation -->
     <nav>
         <div class="nav-container">
-            <a href="../index.html" class="logo-container">
-                <span class="logo">iProyals</span>
+            <a href="index.html" class="logo-container">
+                <img src="logo.svg" alt="iProyals Logo" class="logo-image">
             </a>
             <button class="mobile-menu-toggle" aria-label="Toggle menu">
                 <span>☰</span>
             </button>
             <ul class="nav-menu">
-                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="pricing.html">Pricing</a></li>
                 <li><a href="use-cases.html">Use Cases</a></li>
-                <li><a href="documentation.html">Documentation</a></li>
+                <li><a href="documentation.html">Docs</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="pricing.html" class="cta-button">Get Started</a></li>
+                <li><a href="https://myaccount.iproyals.shop/" class="nav-login" target="_blank" rel="noopener">Login</a></li>
+                <li><a href="https://myaccount.iproyals.shop/" class="cta-button" target="_blank" rel="noopener">Sign Up</a></li>
             </ul>
         </div>
     </nav>
 
-    <section class="hero">
+    <!-- Page Hero -->
+    <div class="page-hero">
         <h1>About iProyals</h1>
-        <p>Building the future of proxy services</p>
-    </section>
+        <p>Building the future of proxy and VPN infrastructure for businesses worldwide</p>
+    </div>
 
+    <!-- Mission Section -->
     <section class="content-section">
         <h2>Our Mission</h2>
         <p>At iProyals, we're committed to providing businesses with the most reliable, secure, and high-performance proxy solutions available. Our mission is to democratize access to the internet by offering enterprise-grade proxy services that enable businesses of all sizes to operate globally without restrictions.</p>
-        
+
         <h2>Who We Are</h2>
-        <p>Founded by a team of network infrastructure experts and cybersecurity professionals, iProyals has grown to become a trusted provider of proxy and VPN services for thousands of businesses worldwide.</p>
-        
+        <p>Founded by a team of network infrastructure experts and cybersecurity professionals, iProyals has grown to become a trusted provider of proxy and VPN services for thousands of businesses worldwide. We combine cutting-edge technology with an unrelenting focus on performance and reliability.</p>
+
         <h2>What Sets Us Apart</h2>
-        <p>We believe that proxy services should be fast, reliable, and accessible to everyone. That's why we've built our infrastructure from the ground up with these principles in mind.</p>
+        <p>We believe that proxy services should be fast, reliable, and accessible to everyone. That's why we've built our infrastructure from the ground up with these principles in mind — maintaining millions of clean IPs, monitoring uptime 24/7, and backing everything with expert human support.</p>
     </section>
 
+    <!-- Values Grid -->
     <section>
+        <h2 class="section-title">Our Core Values</h2>
+        <p class="section-subtitle">The principles that guide everything we do</p>
         <div class="features-grid">
             <div class="feature-card">
                 <div class="feature-icon">⚡</div>
                 <h3>Performance First</h3>
-                <p>Our globally distributed network ensures lightning-fast connections with minimal latency.</p>
+                <p>Our globally distributed network ensures lightning-fast connections with minimal latency wherever you need to connect.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">🔒</div>
                 <h3>Security by Design</h3>
-                <p>Military-grade encryption and strict no-logs policy keep your data private and secure.</p>
+                <p>Military-grade encryption and a strict no-logs policy keep your data private and your operations secure.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">🌍</div>
                 <h3>Global Coverage</h3>
-                <p>With presence in 195+ countries, we provide truly global access to the internet.</p>
+                <p>With presence in 195+ countries, we provide truly global access to the internet with pinpoint geo-targeting.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">💎</div>
                 <h3>Premium Quality</h3>
-                <p>Every proxy is tested and verified to ensure maximum reliability and performance.</p>
+                <p>Every proxy is tested and verified to ensure maximum reliability and performance. We retire IPs that underperform.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">🎯</div>
                 <h3>Customer Focused</h3>
-                <p>Our dedicated support team is available 24/7 to help you succeed.</p>
+                <p>Our dedicated support team is available 24/7 to help you succeed — real people, not bots, with expertise that matters.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">🚀</div>
                 <h3>Innovation Driven</h3>
-                <p>We continuously invest in new technologies to stay ahead of the curve.</p>
+                <p>We continuously invest in new technologies and protocols to stay ahead of the curve and ahead of detection.</p>
             </div>
         </div>
     </section>
 
-    <section class="stats">
+    <!-- Stats Section -->
+    <div class="stats">
         <div class="stat-card">
             <div class="stat-number">10M+</div>
             <div class="stat-label">IP Addresses</div>
@@ -97,22 +107,29 @@
             <div class="stat-label">Uptime</div>
         </div>
         <div class="stat-card">
-            <div class="stat-number">24/7</div>
-            <div class="stat-label">Support</div>
+            <div class="stat-number">5K+</div>
+            <div class="stat-label">Happy Clients</div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <h2>Join Thousands of Satisfied Customers</h2>
+        <p>Experience the iProyals difference today. Sign up in seconds — no credit card required.</p>
+        <div class="hero-buttons">
+            <a href="https://myaccount.iproyals.shop/" class="btn-primary" target="_blank" rel="noopener">Get Started Free</a>
+            <a href="contact.html" class="btn-secondary">Talk to Us</a>
         </div>
     </section>
 
-    <section class="cta-section">
-        <h2>Join Thousands of Satisfied Customers</h2>
-        <p>Experience the iProyals difference today</p>
-        <a href="pricing.html" class="btn-primary">Get Started</a>
-    </section>
-
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <div class="footer-section">
-                <h4>iProyals</h4>
-                <p style="color: var(--text-gray);">Premium proxy and VPN services for businesses worldwide.</p>
+            <div class="footer-section footer-brand">
+                <a href="index.html" class="logo-container">
+                    <img src="logo.svg" alt="iProyals" class="footer-logo">
+                </a>
+                <p>Premium proxy and VPN services for businesses worldwide. Fast, secure, and reliable infrastructure you can count on.</p>
             </div>
             <div class="footer-section">
                 <h4>Products</h4>
@@ -120,6 +137,7 @@
                     <li><a href="products.html#residential">Residential Proxies</a></li>
                     <li><a href="products.html#datacenter">Datacenter Proxies</a></li>
                     <li><a href="products.html#mobile">Mobile Proxies</a></li>
+                    <li><a href="products.html#rotating">Rotating Proxies</a></li>
                     <li><a href="products.html#vpn">VPN Services</a></li>
                 </ul>
             </div>
@@ -128,7 +146,8 @@
                 <ul>
                     <li><a href="documentation.html">Documentation</a></li>
                     <li><a href="documentation.html#api">API Reference</a></li>
-                    <li><a href="contact.html">Support</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="use-cases.html">Use Cases</a></li>
                 </ul>
             </div>
             <div class="footer-section">
@@ -136,14 +155,23 @@
                 <ul>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Account</h4>
+                <ul>
+                    <li><a href="https://myaccount.iproyals.shop/" target="_blank" rel="noopener">Login</a></li>
+                    <li><a href="https://myaccount.iproyals.shop/" target="_blank" rel="noopener">Sign Up</a></li>
+                    <li><a href="https://myaccount.iproyals.shop/" target="_blank" rel="noopener">Dashboard</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 iProyals. All rights reserved.</p>
+            <p>&copy; 2025 iProyals. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
         </div>
     </footer>
 
-    <script src="../js/main.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

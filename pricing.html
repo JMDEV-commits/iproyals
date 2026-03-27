@@ -6,45 +6,45 @@
     <meta name="description" content="iProyals Pricing - Transparent pricing for all proxy and VPN services. IPv4, IPv6, and rotating proxies available.">
     <meta name="keywords" content="proxy pricing, VPN pricing, residential proxy cost, datacenter proxy pricing">
     <title>Pricing - iProyals</title>
-    
-    <!-- Fonts -->
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
-            <a href="../index.html" class="logo-container">
-                <!-- Uncomment and add your logo: <img src="../images/logo.png" alt="iProyals Logo" class="logo-image"> -->
-                <span class="logo">iProyals</span>
+            <a href="index.html" class="logo-container">
+                <img src="logo.svg" alt="iProyals Logo" class="logo-image">
             </a>
             <button class="mobile-menu-toggle" aria-label="Toggle menu">
                 <span>☰</span>
             </button>
             <ul class="nav-menu">
-                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="pricing.html">Pricing</a></li>
                 <li><a href="use-cases.html">Use Cases</a></li>
-                <li><a href="documentation.html">Documentation</a></li>
+                <li><a href="documentation.html">Docs</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="pricing.html" class="cta-button">Get Started</a></li>
+                <li><a href="https://myaccount.iproyals.shop/" class="nav-login" target="_blank" rel="noopener">Login</a></li>
+                <li><a href="https://myaccount.iproyals.shop/" class="cta-button" target="_blank" rel="noopener">Sign Up</a></li>
             </ul>
         </div>
     </nav>
 
+    <!-- Page Hero -->
+    <div class="page-hero">
+        <h1>Transparent Pricing</h1>
+        <p>No hidden fees. Pay only for what you use. Scale up or down anytime.</p>
+    </div>
+
     <!-- Pricing Section -->
-    <section class="pricing" style="padding-top: 150px;">
-        <h2 class="section-title">Transparent Pricing</h2>
-        <p class="section-subtitle">Choose the perfect plan for your needs</p>
-        
+    <section class="pricing" style="padding-top: 2rem;">
         <div class="pricing-tabs">
             <button class="tab-button active" onclick="showPricing('ipv4')">IPv4 Services</button>
             <button class="tab-button" onclick="showPricing('ipv6')">IPv6 Services</button>
@@ -54,44 +54,101 @@
         <!-- IPv4 Pricing -->
         <div class="pricing-grid active" id="ipv4-pricing">
             <div class="pricing-card">
+                <div class="pricing-badge">Popular</div>
                 <h3>Proxy (IPv4)</h3>
-                <div class="price">$2.40</div>
-                <a href="contact.html" class="btn-primary">Get Started</a>
+                <div class="price">$2.40<span class="price-period">/mo</span></div>
+                <p class="pricing-desc">Dedicated IPv4 HTTP/HTTPS proxy</p>
+                <ul class="pricing-features">
+                    <li>✓ Dedicated IP address</li>
+                    <li>✓ HTTP &amp; HTTPS support</li>
+                    <li>✓ Unlimited bandwidth</li>
+                    <li>✓ 99.9% uptime SLA</li>
+                </ul>
+                <a href="https://myaccount.iproyals.shop/" class="btn-primary" target="_blank" rel="noopener">Get Started</a>
             </div>
             <div class="pricing-card">
                 <h3>Shared Proxy (IPv4)</h3>
-                <div class="price">$1.20</div>
-                <a href="contact.html" class="btn-primary">Get Started</a>
+                <div class="price">$1.20<span class="price-period">/mo</span></div>
+                <p class="pricing-desc">Cost-effective shared IPv4 proxy</p>
+                <ul class="pricing-features">
+                    <li>✓ Shared IP pool</li>
+                    <li>✓ HTTP &amp; HTTPS support</li>
+                    <li>✓ High availability</li>
+                    <li>✓ Great value</li>
+                </ul>
+                <a href="https://myaccount.iproyals.shop/" class="btn-primary" target="_blank" rel="noopener">Get Started</a>
             </div>
             <div class="pricing-card">
                 <h3>SOCKS5</h3>
-                <div class="price">$2.08</div>
-                <a href="contact.html" class="btn-primary">Get Started</a>
+                <div class="price">$2.08<span class="price-period">/mo</span></div>
+                <p class="pricing-desc">Versatile SOCKS5 proxy protocol</p>
+                <ul class="pricing-features">
+                    <li>✓ SOCKS5 protocol</li>
+                    <li>✓ UDP &amp; TCP support</li>
+                    <li>✓ Username/password auth</li>
+                    <li>✓ All traffic types</li>
+                </ul>
+                <a href="https://myaccount.iproyals.shop/" class="btn-primary" target="_blank" rel="noopener">Get Started</a>
             </div>
             <div class="pricing-card">
                 <h3>Shared SOCKS5</h3>
-                <div class="price">$1.20</div>
-                <a href="contact.html" class="btn-primary">Get Started</a>
+                <div class="price">$1.20<span class="price-period">/mo</span></div>
+                <p class="pricing-desc">Shared SOCKS5 at a lower price</p>
+                <ul class="pricing-features">
+                    <li>✓ SOCKS5 protocol</li>
+                    <li>✓ Shared pool</li>
+                    <li>✓ UDP support</li>
+                    <li>✓ Budget-friendly</li>
+                </ul>
+                <a href="https://myaccount.iproyals.shop/" class="btn-primary" target="_blank" rel="noopener">Get Started</a>
             </div>
             <div class="pricing-card">
                 <h3>Shadowsocks</h3>
-                <div class="price">$2.80</div>
-                <a href="contact.html" class="btn-primary">Get Started</a>
+                <div class="price">$2.80<span class="price-period">/mo</span></div>
+                <p class="pricing-desc">Encrypted Shadowsocks proxy</p>
+                <ul class="pricing-features">
+                    <li>✓ Shadowsocks protocol</li>
+                    <li>✓ Traffic obfuscation</li>
+                    <li>✓ High encryption</li>
+                    <li>✓ Bypass firewalls</li>
+                </ul>
+                <a href="https://myaccount.iproyals.shop/" class="btn-primary" target="_blank" rel="noopener">Get Started</a>
             </div>
             <div class="pricing-card">
                 <h3>Trojan</h3>
-                <div class="price">$2.80</div>
-                <a href="contact.html" class="btn-primary">Get Started</a>
+                <div class="price">$2.80<span class="price-period">/mo</span></div>
+                <p class="pricing-desc">Stealth Trojan proxy protocol</p>
+                <ul class="pricing-features">
+                    <li>✓ Trojan protocol</li>
+                    <li>✓ TLS encryption</li>
+                    <li>✓ Undetectable traffic</li>
+                    <li>✓ High performance</li>
+                </ul>
+                <a href="https://myaccount.iproyals.shop/" class="btn-primary" target="_blank" rel="noopener">Get Started</a>
             </div>
             <div class="pricing-card">
-                <h3>VPN Wireguard</h3>
-                <div class="price">$4.20</div>
-                <a href="contact.html" class="btn-primary">Get Started</a>
+                <h3>VPN WireGuard</h3>
+                <div class="price">$4.20<span class="price-period">/mo</span></div>
+                <p class="pricing-desc">Next-gen WireGuard VPN tunnel</p>
+                <ul class="pricing-features">
+                    <li>✓ WireGuard protocol</li>
+                    <li>✓ Full traffic encryption</li>
+                    <li>✓ No-logs policy</li>
+                    <li>✓ Kill switch</li>
+                </ul>
+                <a href="https://myaccount.iproyals.shop/" class="btn-primary" target="_blank" rel="noopener">Get Started</a>
             </div>
             <div class="pricing-card">
                 <h3>DNS Proxy</h3>
-                <div class="price">$2.80</div>
-                <a href="contact.html" class="btn-primary">Get Started</a>
+                <div class="price">$2.80<span class="price-period">/mo</span></div>
+                <p class="pricing-desc">Smart DNS proxy for streaming</p>
+                <ul class="pricing-features">
+                    <li>✓ DNS-level proxy</li>
+                    <li>✓ Bypass geo-blocks</li>
+                    <li>✓ No speed loss</li>
+                    <li>✓ Easy setup</li>
+                </ul>
+                <a href="https://myaccount.iproyals.shop/" class="btn-primary" target="_blank" rel="noopener">Get Started</a>
             </div>
         </div>
 
@@ -99,106 +156,189 @@
         <div class="pricing-grid" id="ipv6-pricing">
             <div class="pricing-card">
                 <h3>Proxy IPv6</h3>
-                <div class="price">$1.82</div>
-                <a href="contact.html" class="btn-primary">Get Started</a>
+                <div class="price">$1.82<span class="price-period">/mo</span></div>
+                <p class="pricing-desc">Dedicated IPv6 HTTP/HTTPS proxy</p>
+                <ul class="pricing-features">
+                    <li>✓ Dedicated IPv6 address</li>
+                    <li>✓ HTTP &amp; HTTPS support</li>
+                    <li>✓ High speed</li>
+                    <li>✓ 99.9% uptime</li>
+                </ul>
+                <a href="https://myaccount.iproyals.shop/" class="btn-primary" target="_blank" rel="noopener">Get Started</a>
             </div>
             <div class="pricing-card">
                 <h3>Shared Proxy IPv6</h3>
-                <div class="price">$0.96</div>
-                <a href="contact.html" class="btn-primary">Get Started</a>
+                <div class="price">$0.96<span class="price-period">/mo</span></div>
+                <p class="pricing-desc">Budget IPv6 shared proxy</p>
+                <ul class="pricing-features">
+                    <li>✓ Shared IPv6 pool</li>
+                    <li>✓ HTTP &amp; HTTPS</li>
+                    <li>✓ Lowest price</li>
+                    <li>✓ High availability</li>
+                </ul>
+                <a href="https://myaccount.iproyals.shop/" class="btn-primary" target="_blank" rel="noopener">Get Started</a>
             </div>
             <div class="pricing-card">
                 <h3>SOCKS5 IPv6</h3>
-                <div class="price">$1.82</div>
-                <a href="contact.html" class="btn-primary">Get Started</a>
+                <div class="price">$1.82<span class="price-period">/mo</span></div>
+                <p class="pricing-desc">SOCKS5 protocol on IPv6</p>
+                <ul class="pricing-features">
+                    <li>✓ SOCKS5 protocol</li>
+                    <li>✓ IPv6 network</li>
+                    <li>✓ UDP support</li>
+                    <li>✓ Auth support</li>
+                </ul>
+                <a href="https://myaccount.iproyals.shop/" class="btn-primary" target="_blank" rel="noopener">Get Started</a>
             </div>
             <div class="pricing-card">
                 <h3>Shared SOCKS5 IPv6</h3>
-                <div class="price">$0.96</div>
-                <a href="contact.html" class="btn-primary">Get Started</a>
+                <div class="price">$0.96<span class="price-period">/mo</span></div>
+                <p class="pricing-desc">Shared SOCKS5 on IPv6 network</p>
+                <ul class="pricing-features">
+                    <li>✓ SOCKS5 protocol</li>
+                    <li>✓ Shared IPv6 pool</li>
+                    <li>✓ Great value</li>
+                    <li>✓ Fast speed</li>
+                </ul>
+                <a href="https://myaccount.iproyals.shop/" class="btn-primary" target="_blank" rel="noopener">Get Started</a>
             </div>
             <div class="pricing-card">
                 <h3>Shadowsocks V6</h3>
-                <div class="price">$2.24</div>
-                <a href="contact.html" class="btn-primary">Get Started</a>
+                <div class="price">$2.24<span class="price-period">/mo</span></div>
+                <p class="pricing-desc">Shadowsocks on IPv6 infrastructure</p>
+                <ul class="pricing-features">
+                    <li>✓ Shadowsocks protocol</li>
+                    <li>✓ IPv6 network</li>
+                    <li>✓ Traffic obfuscation</li>
+                    <li>✓ Bypass censorship</li>
+                </ul>
+                <a href="https://myaccount.iproyals.shop/" class="btn-primary" target="_blank" rel="noopener">Get Started</a>
             </div>
             <div class="pricing-card">
                 <h3>Trojan V6</h3>
-                <div class="price">$2.24</div>
-                <a href="contact.html" class="btn-primary">Get Started</a>
+                <div class="price">$2.24<span class="price-period">/mo</span></div>
+                <p class="pricing-desc">Trojan proxy on IPv6 network</p>
+                <ul class="pricing-features">
+                    <li>✓ Trojan protocol</li>
+                    <li>✓ IPv6 network</li>
+                    <li>✓ TLS encryption</li>
+                    <li>✓ Stealth traffic</li>
+                </ul>
+                <a href="https://myaccount.iproyals.shop/" class="btn-primary" target="_blank" rel="noopener">Get Started</a>
             </div>
             <div class="pricing-card">
-                <h3>VPN Wireguard V6</h3>
-                <div class="price">$2.24</div>
-                <a href="contact.html" class="btn-primary">Get Started</a>
+                <h3>VPN WireGuard V6</h3>
+                <div class="price">$2.24<span class="price-period">/mo</span></div>
+                <p class="pricing-desc">WireGuard VPN on IPv6</p>
+                <ul class="pricing-features">
+                    <li>✓ WireGuard + IPv6</li>
+                    <li>✓ Full encryption</li>
+                    <li>✓ No-logs policy</li>
+                    <li>✓ High speed</li>
+                </ul>
+                <a href="https://myaccount.iproyals.shop/" class="btn-primary" target="_blank" rel="noopener">Get Started</a>
             </div>
             <div class="pricing-card">
                 <h3>DNS Proxy V6</h3>
-                <div class="price">$2.80</div>
-                <a href="contact.html" class="btn-primary">Get Started</a>
+                <div class="price">$2.80<span class="price-period">/mo</span></div>
+                <p class="pricing-desc">DNS proxy via IPv6 network</p>
+                <ul class="pricing-features">
+                    <li>✓ DNS-level routing</li>
+                    <li>✓ IPv6 infrastructure</li>
+                    <li>✓ Geo-block bypass</li>
+                    <li>✓ Easy setup</li>
+                </ul>
+                <a href="https://myaccount.iproyals.shop/" class="btn-primary" target="_blank" rel="noopener">Get Started</a>
             </div>
         </div>
 
         <!-- Rotating Proxies Pricing -->
         <div class="pricing-grid" id="rotating-pricing">
             <div class="pricing-card">
-                <h3>Rotating Residential Proxy</h3>
-                <div class="price">$7.60<span style="font-size: 1rem; color: var(--text-gray);">/GB</span></div>
-                <a href="contact.html" class="btn-primary">Get Started</a>
+                <h3>Rotating Residential</h3>
+                <div class="price">$7.60<span class="price-period">/GB</span></div>
+                <p class="pricing-desc">Real residential IPs that rotate automatically</p>
+                <ul class="pricing-features">
+                    <li>✓ 10M+ real residential IPs</li>
+                    <li>✓ 195+ countries</li>
+                    <li>✓ Auto IP rotation</li>
+                    <li>✓ Sticky sessions</li>
+                </ul>
+                <a href="https://myaccount.iproyals.shop/" class="btn-primary" target="_blank" rel="noopener">Get Started</a>
             </div>
             <div class="pricing-card">
-                <h3>Rotating Mobile Proxy</h3>
-                <div class="price">$16.00<span style="font-size: 1rem; color: var(--text-gray);">/GB</span></div>
-                <a href="contact.html" class="btn-primary">Get Started</a>
+                <div class="pricing-badge">Premium</div>
+                <h3>Rotating Mobile</h3>
+                <div class="price">$16.00<span class="price-period">/GB</span></div>
+                <p class="pricing-desc">4G/5G mobile IPs with the highest trust score</p>
+                <ul class="pricing-features">
+                    <li>✓ Real 4G/5G IPs</li>
+                    <li>✓ Highest trust score</li>
+                    <li>✓ Auto-rotation</li>
+                    <li>✓ Social media safe</li>
+                </ul>
+                <a href="https://myaccount.iproyals.shop/" class="btn-primary" target="_blank" rel="noopener">Get Started</a>
             </div>
             <div class="pricing-card">
-                <h3>Rotating Datacenter Proxy</h3>
-                <div class="price">$1.40<span style="font-size: 1rem; color: var(--text-gray);">/GB</span></div>
-                <a href="contact.html" class="btn-primary">Get Started</a>
+                <h3>Rotating Datacenter</h3>
+                <div class="price">$1.40<span class="price-period">/GB</span></div>
+                <p class="pricing-desc">Ultra-fast datacenter IPs at the best price</p>
+                <ul class="pricing-features">
+                    <li>✓ Blazing fast speed</li>
+                    <li>✓ Large IP pool</li>
+                    <li>✓ Auto-rotation</li>
+                    <li>✓ Best price/performance</li>
+                </ul>
+                <a href="https://myaccount.iproyals.shop/" class="btn-primary" target="_blank" rel="noopener">Get Started</a>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
+    <!-- What's Included -->
     <section class="content-section">
-        <h2>What's Included</h2>
+        <h2>Everything Included in Every Plan</h2>
         <div class="features-grid">
             <div class="feature-card">
-                <div class="feature-icon">✓</div>
+                <div class="feature-icon">🚫</div>
                 <h3>No Setup Fees</h3>
-                <p>Get started immediately with no hidden costs or setup charges.</p>
+                <p>Get started immediately with no hidden costs or setup charges. You pay exactly what you see.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">✓</div>
+                <div class="feature-icon">💬</div>
                 <h3>24/7 Support</h3>
-                <p>Our team is always ready to help you with any questions.</p>
+                <p>Our expert team is always ready to help you with any questions. Average response time under 2 minutes.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">✓</div>
-                <h3>99.9% Uptime</h3>
-                <p>Industry-leading uptime guarantee for uninterrupted service.</p>
+                <div class="feature-icon">⬆️</div>
+                <h3>99.9% Uptime SLA</h3>
+                <p>Industry-leading uptime guarantee backed by our distributed infrastructure and monitoring.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">✓</div>
+                <div class="feature-icon">🔧</div>
                 <h3>Easy Integration</h3>
-                <p>Simple API and comprehensive documentation for quick setup.</p>
+                <p>Simple API and comprehensive documentation for quick setup in any programming language.</p>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
     <section class="cta-section">
-        <h2>Have Questions?</h2>
-        <p>Our team is here to help you choose the right plan</p>
-        <a href="contact.html" class="btn-primary">Contact Us</a>
+        <h2>Have Questions About Pricing?</h2>
+        <p>Our team is here to help you choose the right plan for your specific needs</p>
+        <div class="hero-buttons">
+            <a href="https://myaccount.iproyals.shop/" class="btn-primary" target="_blank" rel="noopener">Get Started Now</a>
+            <a href="contact.html" class="btn-secondary">Contact Sales</a>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <div class="footer-section">
-                <h4>iProyals</h4>
-                <p style="color: var(--text-gray);">Premium proxy and VPN services for businesses worldwide.</p>
+            <div class="footer-section footer-brand">
+                <a href="index.html" class="logo-container">
+                    <img src="logo.svg" alt="iProyals" class="footer-logo">
+                </a>
+                <p>Premium proxy and VPN services for businesses worldwide. Fast, secure, and reliable infrastructure you can count on.</p>
             </div>
             <div class="footer-section">
                 <h4>Products</h4>
@@ -206,6 +346,7 @@
                     <li><a href="products.html#residential">Residential Proxies</a></li>
                     <li><a href="products.html#datacenter">Datacenter Proxies</a></li>
                     <li><a href="products.html#mobile">Mobile Proxies</a></li>
+                    <li><a href="products.html#rotating">Rotating Proxies</a></li>
                     <li><a href="products.html#vpn">VPN Services</a></li>
                 </ul>
             </div>
@@ -214,7 +355,8 @@
                 <ul>
                     <li><a href="documentation.html">Documentation</a></li>
                     <li><a href="documentation.html#api">API Reference</a></li>
-                    <li><a href="contact.html">Support</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="use-cases.html">Use Cases</a></li>
                 </ul>
             </div>
             <div class="footer-section">
@@ -222,16 +364,23 @@
                 <ul>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Account</h4>
+                <ul>
+                    <li><a href="https://myaccount.iproyals.shop/" target="_blank" rel="noopener">Login</a></li>
+                    <li><a href="https://myaccount.iproyals.shop/" target="_blank" rel="noopener">Sign Up</a></li>
+                    <li><a href="https://myaccount.iproyals.shop/" target="_blank" rel="noopener">Dashboard</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 iProyals. All rights reserved.</p>
+            <p>&copy; 2025 iProyals. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
         </div>
     </footer>
 
-    <!-- JavaScript -->
-    <script src="../js/main.js"></script>
-
+    <script src="main.js"></script>
 </body>
 </html>
